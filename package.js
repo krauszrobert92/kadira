@@ -95,7 +95,7 @@ function configurePackage(api) {
 
   api.use([
     'minimongo', 'livedata', 'mongo-livedata', 'ejson', 'ddp-common',
-    'underscore', 'http', 'email', 'random'
+    'underscore', 'http', 'email@2.0.0', 'random'
   ], ['server']);
   api.use(['underscore', 'random', 'jquery', 'localstorage'], ['client']);
 
