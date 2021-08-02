@@ -17,12 +17,20 @@ var npmModules = {
 
 Npm.depends(npmModules);
 
+<<<<<<< HEAD
 Package.onUse(function (api) {
+=======
+Package.onUse(function(api) {
+>>>>>>> 83482247ba6fe53fe5c95f57feabc47b6d21f6a4
   configurePackage(api);
   api.export(['Kadira']);
 });
 
+<<<<<<< HEAD
 Package.onTest(function (api) {
+=======
+Package.onTest(function(api) {
+>>>>>>> 83482247ba6fe53fe5c95f57feabc47b6d21f6a4
   configurePackage(api);
   api.use([
     'tinytest',
@@ -95,7 +103,7 @@ function configurePackage(api) {
 
   api.use([
     'minimongo', 'livedata', 'mongo-livedata', 'ejson', 'ddp-common',
-    'underscore', 'http', 'email@2.0.0', 'random'
+    'underscore', 'http@2.0.0', 'email@2.0.0', 'random'
   ], ['server']);
   api.use(['underscore', 'random', 'jquery', 'localstorage'], ['client']);
 
