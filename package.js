@@ -17,20 +17,12 @@ var npmModules = {
 
 Npm.depends(npmModules);
 
-<<<<<<< HEAD
-Package.onUse(function (api) {
-=======
 Package.onUse(function(api) {
->>>>>>> 83482247ba6fe53fe5c95f57feabc47b6d21f6a4
   configurePackage(api);
   api.export(['Kadira']);
 });
 
-<<<<<<< HEAD
-Package.onTest(function (api) {
-=======
 Package.onTest(function(api) {
->>>>>>> 83482247ba6fe53fe5c95f57feabc47b6d21f6a4
   configurePackage(api);
   api.use([
     'tinytest',
