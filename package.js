@@ -17,12 +17,12 @@ var npmModules = {
 
 Npm.depends(npmModules);
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
   configurePackage(api);
   api.export(['Kadira']);
 });
 
-Package.onTest(function(api) {
+Package.onTest(function (api) {
   configurePackage(api);
   api.use([
     'tinytest',
@@ -97,7 +97,7 @@ function configurePackage(api) {
     'minimongo', 'livedata', 'mongo-livedata', 'ejson', 'ddp-common',
     'underscore', 'http@2.0.0', 'email@2.0.0', 'random'
   ], ['server']);
-  api.use(['underscore', 'random', 'jquery', 'localstorage'], ['client']);
+  api.use(['underscore', 'random', 'jquery@3.0.0', 'localstorage'], ['client']);
 
   // common before
   api.addFiles([
